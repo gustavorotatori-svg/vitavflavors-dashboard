@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vita Flavors · Painel de Prospecção</title>
+  <link rel="icon" href="logo-v-vita-flavors.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-geo@3.1.1/dist/d3-geo.min.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div class="brand">
+        <span class="mark"><img src="logo-vita-flavors.png" alt="Vita Flavors"></span>
+        <div>
+          <h1>Painel de Prospecção</h1>
+          <p>Agente comercial automático · aromas para alimentos e bebidas</p>
+        </div>
+      </div>
+      <div class="meta">
+        <span class="pill">Responsável: <b>Gustavo</b></span>
+        <span class="pill">Atualizado: <b id="updatedAt">—</b></span>
+      </div>
+    </header>
+
+    <main>
+      <section class="kpis" id="kpiRow"></section>
+      <section class="card quota" id="quotaCard">
+        <div class="quota-grid">
+          <h2>Cota de envios (janela móvel 24h)</h2>
+          <span class="big" id="quotaText">—</span>
+        </div>
+        <div class="bar"><i id="quotaBar" style="width:0%"></i></div>
+      </section>
+
+      <section class="grid two">
+        <div class="card">
+          <h2>Funil da campanha</h2>
+          <div id="funnel"></div>
+        </div>
+        <div class="card">
+          <h2>Próximos follow-ups / holds</h2>
+          <div id="nextBox"></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Evolução diária</h2>
+        <canvas id="chartTimeline" height="120"></canvas>
+      </section>
+
+      <section class="grid three">
+        <div class="card"><h2>Variação A/B</h2><canvas id="chartAB" height="210"></canvas></div>
+        <div class="card"><h2>Segmentos</h2><canvas id="chartSeg" height="210"></canvas></div>
+        <div class="card"><h2>Distribuição por estado</h2><div id="statesBox"></div></div>
+      </section>
+
+      <section class="card" style="margin-top:14px;">
+        <h2>Leads <span class="muted" id="tableCount"></span></h2>
+        <div class="toolbar">
+          <input id="search" type="search" placeholder="Buscar por nome, email, cidade ou UF...">
+          <select id="statusFilter"></select>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Empresa</th>
+                <th>Segmento</th>
+                <th>Cidade / UF</th>
+                <th>E-mail</th>
+                <th>Variação</th>
+                <th>Fase</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="leadsTable"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Dados de <a href="data.json" target="_blank">data.json</a> · gerado por <b>sync-dashboard.mjs</b> · Vita Flavors — (11) 94222-1028
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
