@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-11-05T21:03:31.456Z",
+  "generatedAt": "2026-11-06T12:34:50.165Z",
   "kpis": {
     "totalLeads": 298,
-    "email1": 199,
+    "email1": 204,
     "email2": 86,
     "email3": 43,
-    "responded": 2,
-    "responseRate": 1,
-    "bounces": 8,
+    "responded": 3,
+    "responseRate": 1.5,
+    "bounces": 9,
     "invalid": 0,
     "onHold": 21,
-    "pending": 85,
-    "followupsDue": 103,
+    "pending": 80,
+    "followupsDue": 108,
     "maxCycle": 0
   },
   "funnel": {
     "leads": 298,
-    "elegiveis": 255,
-    "email1": 199,
+    "elegiveis": 254,
+    "email1": 204,
     "email2": 86,
     "email3": 43,
-    "responded": 2
+    "responded": 3
   },
   "followupsDueAt": [
     {
@@ -357,6 +357,14 @@
       "email1": 11,
       "email2": 7,
       "email3": 0,
+      "responses": 1
+    },
+    {
+      "date": "2026-11-06",
+      "sends": 5,
+      "email1": 5,
+      "email2": 0,
+      "email3": 0,
       "responses": 0
     }
   ],
@@ -365,7 +373,7 @@
       "label": "Prova social",
       "raw": "prova_social",
       "total": 111,
-      "sent": 78,
+      "sent": 80,
       "responses": 1,
       "responseRate": 1.3
     },
@@ -373,7 +381,7 @@
       "label": "Consultivo",
       "raw": "consultivo",
       "total": 91,
-      "sent": 55,
+      "sent": 57,
       "responses": 0,
       "responseRate": 0
     },
@@ -381,9 +389,9 @@
       "label": "Pergunta",
       "raw": "pergunta",
       "total": 96,
-      "sent": 66,
-      "responses": 1,
-      "responseRate": 1.5
+      "sent": 67,
+      "responses": 2,
+      "responseRate": 3
     }
   ],
   "segments": [
@@ -433,14 +441,14 @@
       "type": "microcervejaria",
       "label": "Microcervejaria",
       "total": 11,
-      "sent": 2,
+      "sent": 3,
       "responded": 0
     },
     {
       "type": "industria_sucos",
       "label": "Indústria de Sucos",
       "total": 10,
-      "sent": 6,
+      "sent": 8,
       "responded": 0
     },
     {
@@ -448,13 +456,13 @@
       "label": "Confeitaria Industrial",
       "total": 5,
       "sent": 3,
-      "responded": 0
+      "responded": 1
     },
     {
       "type": "fabrica_bebidas",
       "label": "Fábrica de Bebidas",
       "total": 5,
-      "sent": 3,
+      "sent": 5,
       "responded": 0
     },
     {
@@ -497,8 +505,8 @@
     {
       "state": "SP",
       "total": 114,
-      "sent": 79,
-      "responded": 1
+      "sent": 80,
+      "responded": 2
     },
     {
       "state": "N/I",
@@ -533,7 +541,7 @@
     {
       "state": "RJ",
       "total": 8,
-      "sent": 2,
+      "sent": 3,
       "responded": 0
     },
     {
@@ -563,7 +571,7 @@
     {
       "state": "GO",
       "total": 5,
-      "sent": 3,
+      "sent": 4,
       "responded": 0
     },
     {
@@ -575,7 +583,7 @@
     {
       "state": "AM",
       "total": 3,
-      "sent": 1,
+      "sent": 2,
       "responded": 0
     },
     {
@@ -593,7 +601,7 @@
     {
       "state": "SE",
       "total": 2,
-      "sent": 0,
+      "sent": 1,
       "responded": 0
     },
     {
@@ -622,7 +630,7 @@
     }
   ],
   "quota": {
-    "used": 18,
+    "used": 23,
     "limit": 18,
     "remaining": 0
   },
@@ -632,9 +640,114 @@
     "levels": 3,
     "limit": 18,
     "nextStepAt": null,
-    "blocked": false
+    "blocked": true
   },
   "leads": [
+    {
+      "name": "Cervejaria Prisma",
+      "email": "contato@cervejariaprisma.com.br",
+      "type": "microcervejaria",
+      "typeLabel": "Microcervejaria",
+      "city": "Campo Limpo Paulista",
+      "state": "SP",
+      "template": "Prova social",
+      "cycle": 0,
+      "email1": true,
+      "email2": false,
+      "email3": false,
+      "date1": "2026-11-06",
+      "date2": "",
+      "date3": "",
+      "responded": false,
+      "responseDate": "",
+      "holdUntil": "",
+      "status": "Primeiro contato enviado",
+      "statusTone": ""
+    },
+    {
+      "name": "Indústria de Bebidas Risso",
+      "email": "contato@bebidasrisso.com.br",
+      "type": "fabrica_bebidas",
+      "typeLabel": "Fábrica de Bebidas",
+      "city": "Mesquita",
+      "state": "RJ",
+      "template": "Consultivo",
+      "cycle": 0,
+      "email1": true,
+      "email2": false,
+      "email3": false,
+      "date1": "2026-11-06",
+      "date2": "",
+      "date3": "",
+      "responded": false,
+      "responseDate": "",
+      "holdUntil": "",
+      "status": "Primeiro contato enviado",
+      "statusTone": ""
+    },
+    {
+      "name": "Polpas Curumim (Amazonas Indústria e Comércio)",
+      "email": "contato@polpascurumim.com.br",
+      "type": "industria_sucos",
+      "typeLabel": "Indústria de Sucos",
+      "city": "Manaus",
+      "state": "AM",
+      "template": "Pergunta",
+      "cycle": 0,
+      "email1": true,
+      "email2": false,
+      "email3": false,
+      "date1": "2026-11-06",
+      "date2": "",
+      "date3": "",
+      "responded": false,
+      "responseDate": "",
+      "holdUntil": "",
+      "status": "Primeiro contato enviado",
+      "statusTone": ""
+    },
+    {
+      "name": "Pomar do Brasil Indústria e Comércio de Alimentos",
+      "email": "contato@pomardobrasil.com.br",
+      "type": "industria_sucos",
+      "typeLabel": "Indústria de Sucos",
+      "city": "Aracaju",
+      "state": "SE",
+      "template": "Consultivo",
+      "cycle": 0,
+      "email1": true,
+      "email2": false,
+      "email3": false,
+      "date1": "2026-11-06",
+      "date2": "",
+      "date3": "",
+      "responded": false,
+      "responseDate": "",
+      "holdUntil": "",
+      "status": "Primeiro contato enviado",
+      "statusTone": ""
+    },
+    {
+      "name": "Sol Bebidas",
+      "email": "contato@solbebidas.com.br",
+      "type": "fabrica_bebidas",
+      "typeLabel": "Fábrica de Bebidas",
+      "city": "Senador Canedo",
+      "state": "GO",
+      "template": "Prova social",
+      "cycle": 0,
+      "email1": true,
+      "email2": false,
+      "email3": false,
+      "date1": "2026-11-06",
+      "date2": "",
+      "date3": "",
+      "responded": false,
+      "responseDate": "",
+      "holdUntil": "",
+      "status": "Primeiro contato enviado",
+      "statusTone": ""
+    },
     {
       "name": "Bella Terra Alimentos (Polpas e Sucos Congelados)",
       "email": "contato@bellaterra.ind.br",
@@ -1115,8 +1228,8 @@
       "responded": false,
       "responseDate": "",
       "holdUntil": "",
-      "status": "Follow-up 2 enviado",
-      "statusTone": ""
+      "status": "Bounce / suprimido",
+      "statusTone": "danger"
     },
     {
       "name": "Santamate (Terceirização de Bebidas)",
@@ -4724,11 +4837,11 @@
       "date1": "2026-10-07",
       "date2": "2026-10-09",
       "date3": "2026-10-18",
-      "responded": false,
-      "responseDate": "",
+      "responded": true,
+      "responseDate": "2026-11-05",
       "holdUntil": "",
-      "status": "Ciclo completo",
-      "statusTone": ""
+      "status": "Respondeu em 2026-11-05",
+      "statusTone": "positive"
     },
     {
       "name": "Didius Indústria de Pães e Lanches",
@@ -5592,27 +5705,6 @@
       "statusTone": "pending"
     },
     {
-      "name": "Cervejaria Prisma",
-      "email": "contato@cervejariaprisma.com.br",
-      "type": "microcervejaria",
-      "typeLabel": "Microcervejaria",
-      "city": "Campo Limpo Paulista",
-      "state": "SP",
-      "template": "Prova social",
-      "cycle": 0,
-      "email1": false,
-      "email2": false,
-      "email3": false,
-      "date1": "",
-      "date2": "",
-      "date3": "",
-      "responded": false,
-      "responseDate": "",
-      "holdUntil": "",
-      "status": "Aguardando primeiro contato",
-      "statusTone": "pending"
-    },
-    {
       "name": "Cervejaria Sarapó",
       "email": "contato@cervejariasarapo.com",
       "type": "microcervejaria",
@@ -6096,27 +6188,6 @@
       "statusTone": "pending"
     },
     {
-      "name": "Indústria de Bebidas Risso",
-      "email": "contato@bebidasrisso.com.br",
-      "type": "fabrica_bebidas",
-      "typeLabel": "Fábrica de Bebidas",
-      "city": "Mesquita",
-      "state": "RJ",
-      "template": "Consultivo",
-      "cycle": 0,
-      "email1": false,
-      "email2": false,
-      "email3": false,
-      "date1": "",
-      "date2": "",
-      "date3": "",
-      "responded": false,
-      "responseDate": "",
-      "holdUntil": "",
-      "status": "Aguardando primeiro contato",
-      "statusTone": "pending"
-    },
-    {
       "name": "Indústria K&K Alimentos",
       "email": "contato@industriakek.com.br",
       "type": "fabrica_biscoitos",
@@ -6453,48 +6524,6 @@
       "statusTone": "pending"
     },
     {
-      "name": "Polpas Curumim (Amazonas Indústria e Comércio)",
-      "email": "contato@polpascurumim.com.br",
-      "type": "industria_sucos",
-      "typeLabel": "Indústria de Sucos",
-      "city": "Manaus",
-      "state": "AM",
-      "template": "Pergunta",
-      "cycle": 0,
-      "email1": false,
-      "email2": false,
-      "email3": false,
-      "date1": "",
-      "date2": "",
-      "date3": "",
-      "responded": false,
-      "responseDate": "",
-      "holdUntil": "",
-      "status": "Aguardando primeiro contato",
-      "statusTone": "pending"
-    },
-    {
-      "name": "Pomar do Brasil Indústria e Comércio de Alimentos",
-      "email": "contato@pomardobrasil.com.br",
-      "type": "industria_sucos",
-      "typeLabel": "Indústria de Sucos",
-      "city": "Aracaju",
-      "state": "SE",
-      "template": "Consultivo",
-      "cycle": 0,
-      "email1": false,
-      "email2": false,
-      "email3": false,
-      "date1": "",
-      "date2": "",
-      "date3": "",
-      "responded": false,
-      "responseDate": "",
-      "holdUntil": "",
-      "status": "Aguardando primeiro contato",
-      "statusTone": "pending"
-    },
-    {
       "name": "PremieRpet",
       "email": "contato@premierpet.com.br",
       "type": "fabrica_alimentos",
@@ -6711,27 +6740,6 @@
       "typeLabel": "Fábrica de Alimentos",
       "city": "Araraquara",
       "state": "SP",
-      "template": "Prova social",
-      "cycle": 0,
-      "email1": false,
-      "email2": false,
-      "email3": false,
-      "date1": "",
-      "date2": "",
-      "date3": "",
-      "responded": false,
-      "responseDate": "",
-      "holdUntil": "",
-      "status": "Aguardando primeiro contato",
-      "statusTone": "pending"
-    },
-    {
-      "name": "Sol Bebidas",
-      "email": "contato@solbebidas.com.br",
-      "type": "fabrica_bebidas",
-      "typeLabel": "Fábrica de Bebidas",
-      "city": "Senador Canedo",
-      "state": "GO",
       "template": "Prova social",
       "cycle": 0,
       "email1": false,
