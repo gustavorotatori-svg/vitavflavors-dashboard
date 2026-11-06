@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T12:34:50.165Z",
+  "generatedAt": "2026-11-06T12:45:24.874Z",
   "kpis": {
     "totalLeads": 298,
     "email1": 204,
@@ -10,13 +10,13 @@
     "bounces": 9,
     "invalid": 0,
     "onHold": 21,
-    "pending": 80,
+    "pending": 78,
     "followupsDue": 108,
     "maxCycle": 0
   },
   "funnel": {
     "leads": 298,
-    "elegiveis": 254,
+    "elegiveis": 252,
     "email1": 204,
     "email2": 86,
     "email3": 43,
@@ -631,15 +631,15 @@
   ],
   "quota": {
     "used": 23,
-    "limit": 18,
+    "limit": 12,
     "remaining": 0
   },
   "ramp": {
     "enabled": true,
-    "level": 2,
+    "level": 0,
     "levels": 3,
-    "limit": 18,
-    "nextStepAt": null,
+    "limit": 12,
+    "nextStepAt": "2026-11-08T12:45:24.839Z",
     "blocked": true
   },
   "leads": [
