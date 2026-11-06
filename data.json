@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T12:45:24.874Z",
+  "generatedAt": "2026-11-06T13:13:53.808Z",
   "kpis": {
     "totalLeads": 298,
     "email1": 204,
@@ -631,15 +631,15 @@
   ],
   "quota": {
     "used": 23,
-    "limit": 12,
+    "limit": 4,
     "remaining": 0
   },
   "ramp": {
     "enabled": true,
     "level": 0,
-    "levels": 3,
-    "limit": 12,
-    "nextStepAt": "2026-11-08T12:45:24.839Z",
+    "levels": 5,
+    "limit": 4,
+    "nextStepAt": "2026-11-09T13:13:53.797Z",
     "blocked": true
   },
   "leads": [
